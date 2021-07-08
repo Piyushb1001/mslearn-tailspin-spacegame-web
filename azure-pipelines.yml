@@ -2,6 +2,7 @@ trigger:
 - '*'
 
 pool:
+  name : 'PIYUSH'
   vmImage: 'windows-latest'
   demands:
   - npm
