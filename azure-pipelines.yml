@@ -2,7 +2,7 @@ trigger:
 - '*'
 
 pool:
-  name : 'PIYUSH'
+  name : 'PrivateAgentPool'
   vmImage: 'windows-latest'
   demands:
   - npm
