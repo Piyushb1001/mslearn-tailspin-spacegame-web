@@ -1,7 +1,8 @@
+
 trigger:
 - '*'
-
 pool:
+
   name : 'PrivateAgentPool'
   vmImage: 'windows-latest'
   demands:
@@ -9,6 +10,7 @@ pool:
 
 variables:
   buildConfiguration: 'Release'
+
   wwwrootDir: 'Tailspin.SpaceGame.Web/wwwroot'
   dotnetSdkVersion: '5.x'
 
@@ -89,3 +91,4 @@ steps:
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact: drop'
   condition: succeeded()
+
