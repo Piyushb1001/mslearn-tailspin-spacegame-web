@@ -4,8 +4,6 @@ trigger:
 pool:
   name : 'PrivateAgentPool'
   vmImage: 'windows-latest'
-  demands:git
-  - npm
 
 variables:
   buildConfiguration: 'Release'
